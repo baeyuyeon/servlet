@@ -70,7 +70,7 @@ public class FrontControllerServletV5 extends HttpServlet {
         return new MyView("/WEB-INF/views/" + viewName + ".jsp");
     }
     private MyHandlerAdapter getHandlerAdapter(Object handler) {
-        MyHandlerAdapter a;
+
         for (MyHandlerAdapter adapter : handlerAdapters) {
             if (adapter.supports(handler)) {
                return adapter;
